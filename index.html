@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+      width: 50%;
+      margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 80%;
+      display: block;
+      margin: auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo2.png" alt="" class="logo2">
+      <p class="ma">JETLIC</p>
+      <nav class="">
+        <ul class="l23">
+          <li class="l1">JETLIC One</li>
+          <li class="l1">JETLIC Second</li>
+          <li class="l1">JETLIC Pro</li>
+        </ul>
+      </nav>
+  </div>
+  <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img src="s1.jpg" alt="">
+    </div>
+    <div>
+      <img src="s2.png" alt="">
+    </div>
+    <div>
+      <img src="s3.png" alt="">
+    </div>
+  </section>
+
+  <div class="main">
+    <p class="tit">まだ見ぬパソコンを</p>
+    <p class="t2">JETLICは誰もが使えるパソコンです</p>
+    <p class="t2">安価で高性能、そして使いやすい</p>
+    <p class="t2">JETLIC Teamsによる安心サポート</p>
+    <p class="t2">はじめてのパソコンに、進学に</p>
+    <p class="t2">あなたの作業をお手伝い</p>
+    <p class="t2">ご購入はこちらから</p>
+    <a href="#" class="btn-partial-line">
+      <i class="fa fa-caret-right"></i> JETLICを購入する
+    </a>
+  </div>
+  <div class="tw">
+    <a class="twitter-timeline" data-width="220" data-height="300" href="https://twitter.com/JETLIC3?ref_src=twsrc%5Etfw">Tweets by JETLIC3</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <footer>
+    　　<ul class="footer-menu">
+         <li>お問い合わせ ｜</li>
+         <li>サポート ｜</li>
+         <li>プライバシーポリシー ｜</li>
+         <li>JETLIC</li>
+        </ul>
+        <p>©2020JETLIC</p>
+      </footer>
+
+  <!-- <div class="footer">
+    <ul class="follow-me">
+      <li><a href="https://twitter.com/JETLIC3"></a></li>
+      <li><a href="https://www.instagram.com/jetlic_official/"></a></li>
+    </ul>
+    <nav>
+      <ul class="foot">
+        <li class="l2">お問い合わせ</li>
+        <li class="l2">プライバシーポリシー</li>
+        <li class="l2">©2020JETLIC Teams</li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+  </script>
+
+</body>
+
+</html>
